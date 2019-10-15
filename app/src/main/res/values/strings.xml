@@ -6,4 +6,9 @@
     <string name="bmi_button">BMI</string>
     <string name="fat_cal_button">Fat Calculator</string>
     <string name="calories_button">Calories Calculator</string>
+    <string name="bmi_h_edit">Height</string>
+    <string name="bmi_w_edit">Wight</string>
+    <string name="bmi_result_text">Result</string>
+    <string name="bmi_back_button">BACK</string>
+    <string name="bmi_calculator_button">OK</string>
 </resources>
