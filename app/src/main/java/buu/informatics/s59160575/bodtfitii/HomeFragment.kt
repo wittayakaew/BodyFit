@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import buu.informatics.s59160575.bodtfitii.databinding.FragmentHomeBinding
 
 /**
@@ -20,7 +21,10 @@ class HomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
        binding = DataBindingUtil.inflate(inflater,R.layout.fragment_home,container,false)
-
+        binding.bmiButton.setOnClickListener {
+                view ->
+            view.findNavController().navigate(R.id.action_homeFragment_to_bmiFragment)
+        }
         return binding.root
 
     }
