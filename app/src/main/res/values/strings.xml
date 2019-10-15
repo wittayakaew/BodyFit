@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">BodtFitII</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="bmi_button">BMI</string>
+    <string name="fat_cal_button">Fat Calculator</string>
+    <string name="calories_button">Calories Calculator</string>
 </resources>
