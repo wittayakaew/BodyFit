@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
     app:startDestination="@id/homeFragment">
 
     <fragment
@@ -10,9 +12,30 @@
         <action
             android:id="@+id/action_homeFragment_to_bmiFragment"
             app:destination="@id/bmiFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_fatCalculatorFragment"
+            app:destination="@id/fatCalculatorFragment" />
     </fragment>
     <fragment
         android:id="@+id/bmiFragment"
         android:name="buu.informatics.s59160575.bodtfitii.BmiFragment"
-        android:label="BmiFragment" />
+        android:label="BmiFragment" >
+        <action
+            android:id="@+id/action_bmiFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fatCalculatorFragment"
+        android:name="buu.informatics.s59160575.bodtfitii.FatCalculatorFragment"
+        android:label="fragment_fat_calculator"
+        tools:layout="@layout/fragment_fat_calculator" >
+        <action
+            android:id="@+id/action_fatCalculatorFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/caloriesFragment"
+        android:name="buu.informatics.s59160575.bodtfitii.CaloriesFragment"
+        android:label="fragment_calories"
+        tools:layout="@layout/fragment_calories" />
 </navigation>

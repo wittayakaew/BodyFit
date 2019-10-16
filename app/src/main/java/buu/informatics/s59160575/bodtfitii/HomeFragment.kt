@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import buu.informatics.s59160575.bodtfitii.databinding.FragmentHomeBinding
 
 /**
@@ -24,6 +25,9 @@ class HomeFragment : Fragment() {
         binding.bmiButton.setOnClickListener {
                 view ->
             view.findNavController().navigate(R.id.action_homeFragment_to_bmiFragment)
+        }
+        binding.fatCalButton.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_fatCalculatorFragment)
         }
         return binding.root
 
