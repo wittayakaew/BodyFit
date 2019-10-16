@@ -8,6 +8,7 @@
         android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/background"
         tools:context=".CaloriesFragment">
 
 
@@ -16,7 +17,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
+            android:background="@color/button_menu_color"
             android:text="@string/calories_back_button"
+            android:textColor="@color/menu_color"
+            android:textSize="24sp"
+            android:textStyle="bold"
             app:layout_constraintBaseline_toBaselineOf="@+id/calories_cal_button"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -25,7 +30,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
+            android:background="@color/button_menu_color"
             android:text="@string/calories_cal_button"
+            android:textColor="@color/menu_color"
+            android:textSize="24sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
