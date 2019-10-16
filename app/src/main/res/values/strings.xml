@@ -13,4 +13,6 @@
     <string name="bmi_calculator_button">OK</string>
     <string name="fat_back_button">BACK</string>
     <string name="fat_cal_buton">OK</string>
+    <string name="calories_cal_button">OK</string>
+    <string name="calories_back_button">BACK</string>
 </resources>

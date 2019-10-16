@@ -29,6 +29,10 @@ class HomeFragment : Fragment() {
         binding.fatCalButton.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_fatCalculatorFragment)
         }
+
+        binding.caloriesButton.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_caloriesFragment)
+        }
         return binding.root
 
     }

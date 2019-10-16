@@ -15,6 +15,9 @@
         <action
             android:id="@+id/action_homeFragment_to_fatCalculatorFragment"
             app:destination="@id/fatCalculatorFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_caloriesFragment"
+            app:destination="@id/caloriesFragment" />
     </fragment>
     <fragment
         android:id="@+id/bmiFragment"
@@ -37,5 +40,9 @@
         android:id="@+id/caloriesFragment"
         android:name="buu.informatics.s59160575.bodtfitii.CaloriesFragment"
         android:label="fragment_calories"
-        tools:layout="@layout/fragment_calories" />
+        tools:layout="@layout/fragment_calories" >
+        <action
+            android:id="@+id/action_caloriesFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>
