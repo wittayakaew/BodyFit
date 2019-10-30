@@ -15,6 +15,7 @@ import buu.informatics.s59160575.bodtfitii.databinding.FragmentBmiBinding
  */
 class BmiFragment : Fragment() {
     private lateinit var binding: FragmentBmiBinding
+    var bmi = 0;
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -25,8 +26,22 @@ class BmiFragment : Fragment() {
             bmiBackButton.setOnClickListener{
                 findNavController().navigate(R.id.action_bmiFragment_to_homeFragment)
             }
+            bmiCalculatorButton.setOnClickListener{
+                calculatorBMI()
+            }
         }
         return binding.root
+    }
+
+    fun calculatorBMI(){
+        binding.apply {
+            var hight = hightEditBmiNum.text.toString().toInt()
+            var wight = wightEditBmiNum.text.toString().toInt()
+            var bmi= (wight/((hight*1.0/100)*(hight*1.0/100)))
+
+            bmiResultText.text = "%.2f".format(bmi).toDouble().toString()
+        }
+
     }
 
 

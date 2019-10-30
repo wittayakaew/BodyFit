@@ -15,4 +15,9 @@
     <string name="fat_cal_buton">OK</string>
     <string name="calories_cal_button">OK</string>
     <string name="calories_back_button">BACK</string>
+    <string name="weight_hint">weight</string>
+    <string name="hight_hint">Hight</string>
+    <string name="age_hint">Age</string>
+    <string name="heart_rate_hint">Heart Rate</string>
+
 </resources>
