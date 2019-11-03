@@ -33,6 +33,10 @@ class HomeFragment : Fragment() {
         binding.caloriesButton.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_caloriesFragment)
         }
+
+        binding.aboutButon.setOnClickListener{
+            findNavController().navigate(R.id.action_homeFragment_to_aboutFragment)
+        }
         return binding.root
 
     }
