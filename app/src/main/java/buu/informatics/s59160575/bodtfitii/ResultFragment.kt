@@ -8,54 +8,46 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.fragment.findNavController
-import buu.informatics.s59160575.bodtfitii.databinding.FragmentAboutBinding
-import buu.informatics.s59160575.bodtfitii.databinding.FragmentFatCalculatorBinding
+import buu.informatics.s59160575.bodtfitii.databinding.FragmentResultBinding
 
 /**
  * A simple [Fragment] subclass.
  */
-class AboutFragment : Fragment() {
-        private lateinit var binding: FragmentAboutBinding
+class ResultFragment : Fragment() {
+    private lateinit var binding: FragmentResultBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = DataBindingUtil.inflate(inflater,R.layout.fragment_about,container,false)
+        binding = DataBindingUtil.inflate(inflater,R.layout.fragment_result,container,false)
         // Inflate the layout for this fragment
 
-        binding.apply {
-            backAboutButton.setOnClickListener {
-                findNavController().navigate(R.id.action_aboutFragment_to_homeFragment)
-            }
-        }
         return binding.root
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.i("bmiFragment", "onCreate called")
+        Log.i("resultFragment", "onCreate called")
     }
 
     override fun onStart() {
         super.onStart()
-        Log.i("AboutFragment", "onStart called")
+        Log.i("resultFragment", "onStart called")
     }
     override fun onResume() {
         super.onResume()
-        Log.i("AboutFragment", "onResume called")
+        Log.i("resultFragment", "onResume called")
     }
     override fun onPause() {
         super.onPause()
-        Log.i("AboutFragment", "onPause called")
+        Log.i("resultFragment", "onPause called")
     }
     override fun onStop() {
         super.onStop()
-        Log.i("AboutFragment", "onStop called")
+        Log.i("resultFragment", "onStop called")
     }
     override fun onDestroyView() {
         super.onDestroyView()
-        Log.i("AboutFragment", "onDestroyView called")
+        Log.i("resultFragment", "onDestroyView called")
     }
-
 
 }

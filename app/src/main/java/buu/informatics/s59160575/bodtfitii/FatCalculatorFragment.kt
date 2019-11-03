@@ -2,6 +2,7 @@ package buu.informatics.s59160575.bodtfitii
 
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -49,5 +50,29 @@ fun calculatorFat(){
     }
 
 }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        Log.i("fatCalculatorFragment", "onCreate called")
+    }
 
+    override fun onStart() {
+        super.onStart()
+        Log.i("fatCalculatorFragment", "onStart called")
+    }
+    override fun onResume() {
+        super.onResume()
+        Log.i("fatCalculatorFragment", "onResume called")
+    }
+    override fun onPause() {
+        super.onPause()
+        Log.i("fatCalculatorFragment", "onPause called")
+    }
+    override fun onStop() {
+        super.onStop()
+        Log.i("fatCalculatorFragment", "onStop called")
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        Log.i("fatCalculatorFragment", "onDestroyView called")
+    }
 }

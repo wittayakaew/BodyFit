@@ -67,14 +67,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/download" />
 
-        <Button
-            android:id="@+id/about_buton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="About"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/calories_button" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

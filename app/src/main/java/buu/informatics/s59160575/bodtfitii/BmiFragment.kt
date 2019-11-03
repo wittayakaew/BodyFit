@@ -2,6 +2,7 @@ package buu.informatics.s59160575.bodtfitii
 
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -44,6 +45,7 @@ class BmiFragment : Fragment() {
                 var hight = hightEditBmiNum.text.toString().toInt()
                 var wight = wightEditBmiNum.text.toString().toInt()
                 var bmi= (wight/((hight*1.0/100)*(hight*1.0/100)))
+                Log.i("BmiFragment", "bmi = ${bmi}")
 
 
                 if(bmi<18.5){

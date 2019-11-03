@@ -2,6 +2,7 @@ package buu.informatics.s59160575.bodtfitii
 
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -76,5 +77,32 @@ class CaloriesFragment : Fragment() {
 
         }
 
+    }
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        Log.i("caloriesFragment", "onCreate called")
+    }
+
+    override fun onStart() {
+        super.onStart()
+        Log.i("caloriesFragment", "onStart called")
+    }
+    override fun onResume() {
+        super.onResume()
+        Log.i("caloriesFragment", "onResume called")
+    }
+    override fun onPause() {
+        super.onPause()
+        Log.i("caloriesFragment", "onPause called")
+    }
+    override fun onStop() {
+        super.onStop()
+        Log.i("caloriesFragment", "onStop called")
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        Log.i("caloriesFragment", "onDestroyView called")
     }
 }
