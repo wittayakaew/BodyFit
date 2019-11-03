@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="buu.informatics.s59160575.bodtfitii.HomeFragment"
+        android:name="buu.informatics.s59160575.bodtfitii.home.HomeFragment"
         android:label="HomeFragment" >
         <action
             android:id="@+id/action_homeFragment_to_bmiFragment"
@@ -24,8 +24,9 @@
     </fragment>
     <fragment
         android:id="@+id/bmiFragment"
-        android:name="buu.informatics.s59160575.bodtfitii.BmiFragment"
-        android:label="BmiFragment" >
+        android:name="buu.informatics.s59160575.bodtfitii.bmi.BmiFragment"
+        android:label="BmiFragment"
+        tools:layout="@layout/fragment_bmi">
         <action
             android:id="@+id/action_bmiFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
@@ -35,7 +36,7 @@
     </fragment>
     <fragment
         android:id="@+id/fatCalculatorFragment"
-        android:name="buu.informatics.s59160575.bodtfitii.FatCalculatorFragment"
+        android:name="buu.informatics.s59160575.bodtfitii.fatcalculator.FatCalculatorFragment"
         android:label="fragment_fat_calculator"
         tools:layout="@layout/fragment_fat_calculator" >
         <action
@@ -47,7 +48,7 @@
     </fragment>
     <fragment
         android:id="@+id/caloriesFragment"
-        android:name="buu.informatics.s59160575.bodtfitii.CaloriesFragment"
+        android:name="buu.informatics.s59160575.bodtfitii.caloriescal.CaloriesFragment"
         android:label="fragment_calories"
         tools:layout="@layout/fragment_calories" >
         <action
@@ -59,7 +60,7 @@
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
-        android:name="buu.informatics.s59160575.bodtfitii.AboutFragment"
+        android:name="buu.informatics.s59160575.bodtfitii.about.AboutFragment"
         android:label="fragment_about"
         tools:layout="@layout/fragment_about" >
         <action
@@ -68,6 +69,16 @@
     </fragment>
     <fragment
         android:id="@+id/resultFragment"
-        android:name="buu.informatics.s59160575.bodtfitii.ResultFragment"
-        android:label="ResultFragment" />
+        android:name="buu.informatics.s59160575.bodtfitii.result.ResultFragment"
+        android:label="ResultFragment" >
+        <argument
+            android:name="result"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_resultFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+    </fragment>
 </navigation>

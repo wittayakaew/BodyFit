@@ -32,5 +32,7 @@
         Fat calculator กรอกอายุ และ ชีพจรขณะร่างกายพัก เพื่อคำนวนหาชีพจรที่ดีที่สุดในการออกกำลังกายเพื่อลดใขมัน จากนั้นกด ok ระบบจะทำการคำนวน BMI ให้กับคุณแบบอัตโนมัติ
     </string>
     <string name="about_fragment">About</string>
+    <string name="share_item" />
+    <string name="share_success_text">My %1$s is %2$s!! From Bodyfit App</string>
 
 </resources>
