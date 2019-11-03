@@ -116,5 +116,15 @@
 
         </RadioGroup>
 
+        <TextView
+            android:id="@+id/bmr_text_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/bmi_result_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender_group_select" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

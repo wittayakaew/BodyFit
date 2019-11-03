@@ -28,26 +28,39 @@ class CaloriesFragment : Fragment() {
                 findNavController().navigate(R.id.action_caloriesFragment_to_homeFragment)
                 }
             caloriesCalButton.setOnClickListener {
-                    val id = genderGroupSelect.checkedRadioButtonId
+                calculatorCalories()
 
-                if (genderFemale.isChecked){
-                    Toast.makeText( context, "female",Toast.LENGTH_SHORT).show()
-                }else{
-                    Toast.makeText( context, "male",Toast.LENGTH_SHORT).show()
-                }
+
+
 
 
                 }
             return binding.root
         }
 
-        fun calculatorCalories() {
-            binding.apply {
-                var age = caloriesAgeNum.text.toString().toInt()
-                var hight = caloriesHightNum.text.toString().toInt()
-                var weight = caloriesWeightNum.text.toString().toInt()
 
+
+    }
+    fun calculatorCalories() {
+        binding.apply {
+
+            var age = caloriesAgeNum.text.toString().toInt()
+            var hight = caloriesHightNum.text.toString().toInt()
+            var weight = caloriesWeightNum.text.toString().toInt()
+            val id = genderGroupSelect.checkedRadioButtonId
+            var BMR = 0.0
+            if (genderFemale.isChecked){
+                Toast.makeText( context, "female",Toast.LENGTH_SHORT).show()
+                BMR = (665+(9.6 *weight)+(1.8 *hight)-(4.7 *age)).toString().toDouble()
+                bmrTextShow.text = BMR.toString()
+            }else if(genderMale.isChecked){
+                Toast.makeText( context, "male",Toast.LENGTH_SHORT).show()
+                BMR = (66 + (13.7 *weight)+(5  *hight)-(6.8 *age)).toString().toDouble()
+                bmrTextShow.text = BMR.toString()
+            }else{
+                Toast.makeText( context, "Please select Gender.",Toast.LENGTH_SHORT).show()
             }
+
 
         }
 
